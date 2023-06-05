@@ -4,11 +4,13 @@ def check_palindrome_num(my_nums):
     return False
 
 
-positive_nums = input().split(", ")
-# positive_nums_as_digits = []
-# for num in positive_nums:
-#     positive_nums_as_digits.append(int(num))
-for number in positive_nums:
-    print(check_palindrome_num(number))
+def get_palindrome_output(input_nums):
+    input_integers = input_nums.split(", ")
+    for input_int in input_integers:
+        print(check_palindrome_num(input_int))
 
 
+positive_nums = input()
+
+
+get_palindrome_output(positive_nums)
